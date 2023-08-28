@@ -1,0 +1,237 @@
+html {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header h1 {
+  font-size: 75px;
+  margin: 0;
+  padding: 55px;
+  height: 120px;
+  text-align: center;
+  background-color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+
+a {
+  margin: 25px;
+  width: 25px 25px;
+  background-color: black;
+  border-radius: 0;
+  font-size: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+video {
+  float: center;
+  margin-left: 330px;
+}
+
+h2 {
+  float: center;
+  color: black;
+  width: auto;
+  background-color: white;
+  border-radius: 0;
+  font-size: 20px;
+  padding-left: 550px;
+}
+
+caption {
+  margin: 10px;
+  width: 115px;
+  background-color: white;
+  border-radius: 0;
+  font-size: 25px;
+}
+
+footer {
+  float: right;
+  text-align: center;
+  /* background-color: black; */
+  width: 350px;
+}
+
+div {
+  float: left;
+}
+
+h3 {
+  font-size: 45px;
+  margin: 0;
+  padding: 15px;
+  padding-bottom: 25px;
+  height: 35px;
+  text-align: center;
+  background-color: black;
+  border: double red;
+}
+
+h4 {
+  font-size: 25px;
+  background-color: red;
+  width: 160px;
+  border: solid black;
+}
+
+p.texto {
+  font-size: 18px;
+  border: solid black;
+  background-color: red;
+}
+
+h5 {
+  font-size: 25px;
+  width: 165px;
+  background-color: rgb(7, 7, 43);
+  border: solid red;
+}
+
+p.textoa {
+  font-size: 18px;
+  border: solid red;
+  background-color: rgb(7, 7, 43);
+}
+
+h6 {
+  font-size: 25px;
+  width: 250px;
+  background-color: rgb(49, 190, 124);
+  border: solid black;
+}
+
+p.textob {
+  font-size: 18px;
+  border: solid black;
+  background-color: rgb(49, 190, 124);
+}
+
+h7 {
+  font-size: 40px;
+  margin: auto;
+  padding-left: 400px;
+  padding-right: 400px;
+  text-align: center;
+  background-color: red;
+  border: double white;
+}
+
+h8 {
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  padding-left: 350px;
+  padding-right: 350px;
+  background-color: red;
+  border: double white;
+}
+
+h9 {
+  font-size: 45px;
+  margin-top: 25px;
+  padding-left: 450px;
+  padding-right: 450px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: black;
+  border: double red;
+}
+
+h10 {
+  font-size: 25px;
+  width: 165px;
+  background-color: rgb(7, 7, 43);
+  border: solid red;
+}
+
+p.textoc {
+  font-size: 18px;
+  border: solid red;
+  background-color: rgb(7, 7, 43);
+}
+
+h11 {
+  font-size: 25px;
+  background-color: red;
+  width: 160px;
+  border: solid black;
+}
+
+/* p.textod {
+            font-size: 18px;
+    border: solid black;
+    background-color: red;
+        } */
+
+h12 {
+  font-size: 25px;
+  width: 250px;
+  background-color: rgb(49, 190, 124);
+  border: solid black;
+}
+
+h13 {
+  font-size: 45px;
+  padding-left: 595px;
+  padding-right: 595px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  border: double red;
+}
+
+h14 {
+  font-size: 25px;
+  width: 165px;
+  background-color: rgb(7, 7, 43);
+  border: solid red;
+}
+
+p.textoe {
+  font-size: 18px;
+  border: solid yellow;
+  background-color: rgb(8, 147, 240);
+}
+
+h15 {
+  font-size: 25px;
+  width: 165px;
+  background-color: rgb(8, 147, 240);
+  border: solid yellow;
+}
+
+h16 {
+  font-size: 25px;
+  width: 250px;
+  background-color: rgb(49, 190, 124);
+  border: solid black;
+}
+
+section {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Premiun</title>
+    <link rel="icon" href="img/logof1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h3 style="color: white;">F1 PREMIUN</h3> <br>
+
+
+    <form action="https://www.formula1.com/">
+    <div>
+        <input placeholder="Usuario" name="usarname">
+    </div>
+
+    <div>
+        <input placeholder="Contraseña" name="email">
+    </div>
+
+    <div> 
+        <label for="message">Escribir</label> <br>
+        <textarea name="message" cols="30" rows="10">
+        </textarea>
+    </div> 
+
+<fieldset>
+    <legend>Datos Personales</legend>
+        <di>
+            <label>
+                Edad
+                <input type="number">
+            </label>
+        </di> <br>
+
+        <div>
+            <label>
+                Fecha de nacimiento
+                <input type="date">
+            </label>
+        </div> <br>
+
+        <div>
+            <label>
+                Email 
+                <input type="email">
+            </label>
+        </div> <br>
+
+        <div>
+            <label>
+                Telefono 
+                <input type="tel">
+            </label>
+        </div> <br>
+
+</fieldset>
+
+<fieldset>
+    <legend>Tus aficiones</legend>
+        <div>
+            <label>
+                Cine 
+                <input type="checkbox" name="aficiones" value="cine">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Futbol
+                <input type="checkbox" name="aficiones" value="futbol">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Motos
+                <input type="checkbox" name="aficiones" value="motos">
+            </label>
+        </div>
+
+</fieldset>
+
+
+<fieldset>
+    <legend>Tu Sexo</legend>
+
+    <div>
+        <label>
+            Hombre
+            <input type="radio" name="gender">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Mujer
+            <input type="radio" name="gender" checked>
+        </label>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Selecciona tu pais</legend>
+    <input type="list" list="country-list">
+        <datalist id="country-list">
+            <option value="Peru"></option>
+            <option value="Argentina"></option>
+            <option value="Estados Unidos"></option>
+            <option value="Venezuela"></option>
+            <option value="Chile"></option>
+            <option value="Colombia"></option>
+            <option value="Panama"></option>
+        </datalist>
+
+
+</fieldset>
+
+
+
+ <br>   <input type="submit" value="Aceptar">
+
+
+</form>
+
+
+
+
+</body>
+</html>
