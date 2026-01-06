@@ -7,67 +7,91 @@
     <title>Campeonato</title>
     <link rel="icon" href="img/logof1.png">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
     <style>
-        html {
+        body {
             background-color: black;
+            margin: 0;
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
-
-
 </head>
+
 <body>
 
-<br>
-    <h7 style="color: white;">Campeonato de pilotos</h7> <br> <br> <br>
-    <img src="img/polesilvertone.jpg" width="500">
-    <img src="img/logof1.png" width="200" style="float: right;">
+<header style="text-align:center; padding: 30px;">
+    <h1>Campeonato de Pilotos</h1>
+</header>
 
-<table>    
-<ol style="color: white; font-size: 20px;">
-    <li style="color: gold;">Max Verstappen 250pts</li>
-    <li>Charles Leclerc 228pts</li>
-    <li>Sergios Perez 200pts</li>
-    <li>Carlos Saing 180pts</li>
-    <li>George Russel 170pts</li>
-    <li>Lewis Hamilton 165pts</li>
-    <li>Lando Norris 150pts</li>
-    <li>Fernando Alonso 147pts</li>
-    <li>Sebastian Vettel 145pts</li>
-    <li>Valteri Bottas 140pts</li>
-    <li>Daniel Ricciardo 132pts</li>
-    <li>Mick Schumacher 111pts</li>
-    <li>Pierre Gasly 110pts</li>
-    <li>Esteban Ocon 100pts</li>
-    <li>Kevin Magnussen 98pts</li>
-    <li>Yuki Tsunoda 87pts</li>
-    <li>Guanyu Zho 80pts</li>
-    <li>Alexander Albon 71pts</li>
-    <li>Lance Stroll 61pts</li>
-</ol>
-</table>
+<main style="max-width: 1200px; margin: auto; padding: 20px;">
 
-<br> <br>
+    <!-- IMÁGENES SUPERIORES -->
+    <section style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; align-items:center;">
+        <img src="img/polesilvertone.jpg" alt="Pole Silverstone">
+        <img src="img/logof1.png" alt="Logo F1" style="max-width:200px;">
+    </section>
 
-<h8 style="color: white;">Campeonato de Constructores</h8> <br> <br> <br>
-<img src="img/constructoresh2.jpg" width="550">
+    <!-- PILOTOS -->
+    <section style="margin-top:40px;">
+        <ol style="font-size:20px;">
+            <li style="color: gold;">Max Verstappen – 250 pts</li>
+            <li>Charles Leclerc – 228 pts</li>
+            <li>Sergio Pérez – 200 pts</li>
+            <li>Carlos Sainz – 180 pts</li>
+            <li>George Russell – 170 pts</li>
+            <li>Lewis Hamilton – 165 pts</li>
+            <li>Lando Norris – 150 pts</li>
+            <li>Fernando Alonso – 147 pts</li>
+            <li>Sebastian Vettel – 145 pts</li>
+            <li>Valtteri Bottas – 140 pts</li>
+            <li>Daniel Ricciardo – 132 pts</li>
+            <li>Mick Schumacher – 111 pts</li>
+            <li>Pierre Gasly – 110 pts</li>
+            <li>Esteban Ocon – 100 pts</li>
+            <li>Kevin Magnussen – 98 pts</li>
+            <li>Yuki Tsunoda – 87 pts</li>
+            <li>Guanyu Zhou – 80 pts</li>
+            <li>Alexander Albon – 71 pts</li>
+            <li>Lance Stroll – 61 pts</li>
+        </ol>
+    </section>
 
-<ol style="color: white; font-size: 20px;">
-    <li style="color: gold;">Red Bull Racing 400pts</li>
-    <li>Scuderia Ferrari 370pts</li>
-    <li>Mercedes-AMG 300pts</li>
-    <li>Mclaren 214pts</li>
-    <li>Aston Martin 200pts</li>
-    <li>Alpine 170pts</li>
-    <li>Alpha Tauri 142pts</li>
-    <li>Alpha Romeo 111pts</li>
-    <li>Haas F1 Team 42pts</li>
-    <li>Williams 5pts</li>
-</ol> <br> <br>
+    <!-- CONSTRUCTORES -->
+    <section style="margin-top:60px; text-align:center;">
+        <h2>Campeonato de Constructores</h2>
+        <img src="img/constructoresh2.jpg" alt="Constructores" style="margin:20px 0;">
+    </section>
 
-<a style="color: white; border: solid white;" href="/index.html" class="link">VOLVER AL HOME</a>
+    <section>
+        <ol style="font-size:20px;">
+            <li style="color: gold;">Red Bull Racing – 400 pts</li>
+            <li>Scuderia Ferrari – 370 pts</li>
+            <li>Mercedes-AMG – 300 pts</li>
+            <li>McLaren – 214 pts</li>
+            <li>Aston Martin – 200 pts</li>
+            <li>Alpine – 170 pts</li>
+            <li>AlphaTauri – 142 pts</li>
+            <li>Alfa Romeo – 111 pts</li>
+            <li>Haas F1 Team – 42 pts</li>
+            <li>Williams – 5 pts</li>
+        </ol>
+    </section>
+
+</main>
+
+<a href="index.html" class="link" style="display:block; text-align:center; margin:40px; color:white; border:1px solid white; padding:10px;">
+    VOLVER AL HOME
+</a>
 
 </body>
 </html>
