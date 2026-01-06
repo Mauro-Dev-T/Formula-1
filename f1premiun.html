@@ -4,136 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Premiun</title>
+    <title>F1 Premium</title>
+
     <link rel="icon" href="img/logof1.png">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
 
+        main {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        form > div,
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        fieldset {
+            border: 1px solid white;
+            padding: 15px;
+        }
+
+        legend {
+            padding: 0 10px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <h3 style="color: white;">F1 PREMIUN</h3> <br>
 
+<header style="text-align:center; padding:30px;">
+    <h1>F1 PREMIUM</h1>
+</header>
 
-    <form action="https://www.formula1.com/">
+<main>
+
+<form action="https://www.formula1.com/">
+
     <div>
-        <input placeholder="Usuario" name="usarname">
+        <input type="text" name="username" placeholder="Usuario" required>
     </div>
 
     <div>
-        <input placeholder="Contraseña" name="email">
+        <input type="password" name="password" placeholder="Contraseña" required>
     </div>
 
-    <div> 
-        <label for="message">Escribir</label> <br>
-        <textarea name="message" cols="30" rows="10">
-        </textarea>
-    </div> 
+    <div>
+        <label for="message">Escribir</label>
+        <textarea name="message" rows="5"></textarea>
+    </div>
 
-<fieldset>
-    <legend>Datos Personales</legend>
-        <di>
-            <label>
-                Edad
-                <input type="number">
-            </label>
-        </di> <br>
+    <fieldset>
+        <legend>Datos Personales</legend>
 
         <div>
-            <label>
-                Fecha de nacimiento
+            <label>Edad
+                <input type="number" min="1">
+            </label>
+        </div>
+
+        <div>
+            <label>Fecha de nacimiento
                 <input type="date">
             </label>
-        </div> <br>
+        </div>
 
         <div>
-            <label>
-                Email 
+            <label>Email
                 <input type="email">
             </label>
-        </div> <br>
+        </div>
 
         <div>
-            <label>
-                Telefono 
+            <label>Teléfono
                 <input type="tel">
             </label>
-        </div> <br>
-
-</fieldset>
-
-<fieldset>
-    <legend>Tus aficiones</legend>
-        <div>
-            <label>
-                Cine 
-                <input type="checkbox" name="aficiones" value="cine">
-            </label>
         </div>
+    </fieldset>
 
-        <div>
-            <label>
-                Futbol
-                <input type="checkbox" name="aficiones" value="futbol">
-            </label>
-        </div>
+    <fieldset>
+        <legend>Tus aficiones</legend>
 
-        <div>
-            <label>
-                Motos
-                <input type="checkbox" name="aficiones" value="motos">
-            </label>
-        </div>
+        <label><input type="checkbox" name="aficiones" value="cine"> Cine</label><br>
+        <label><input type="checkbox" name="aficiones" value="futbol"> Fútbol</label><br>
+        <label><input type="checkbox" name="aficiones" value="motos"> Motos</label>
+    </fieldset>
 
-</fieldset>
+    <fieldset>
+        <legend>Tu sexo</legend>
 
+        <label><input type="radio" name="gender" value="hombre"> Hombre</label><br>
+        <label><input type="radio" name="gender" value="mujer" checked> Mujer</label>
+    </fieldset>
 
-<fieldset>
-    <legend>Tu Sexo</legend>
+    <fieldset>
+        <legend>Seleccioná tu país</legend>
 
-    <div>
-        <label>
-            Hombre
-            <input type="radio" name="gender">
-        </label>
-    </div>
-
-    <div>
-        <label>
-            Mujer
-            <input type="radio" name="gender" checked>
-        </label>
-    </div>
-
-</fieldset>
-
-<fieldset>
-    <legend>Selecciona tu pais</legend>
-    <input type="list" list="country-list">
+        <input list="country-list" placeholder="País">
         <datalist id="country-list">
-            <option value="Peru"></option>
-            <option value="Argentina"></option>
-            <option value="Estados Unidos"></option>
-            <option value="Venezuela"></option>
-            <option value="Chile"></option>
-            <option value="Colombia"></option>
-            <option value="Panama"></option>
+            <option value="Perú">
+            <option value="Argentina">
+            <option value="Estados Unidos">
+            <option value="Venezuela">
+            <option value="Chile">
+            <option value="Colombia">
+            <option value="Panamá">
         </datalist>
+    </fieldset>
 
-
-</fieldset>
-
-
-
- <br>   <input type="submit" value="Aceptar">
-
+    <input type="submit" value="Aceptar">
 
 </form>
 
-
-
+</main>
 
 </body>
 </html>
