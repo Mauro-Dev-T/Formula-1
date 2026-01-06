@@ -1,237 +1,125 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-header h1 {
-  font-size: 75px;
-  margin: 0;
-  padding: 55px;
-  height: 120px;
-  text-align: center;
-  background-color: white;
-}
-
-.link {
-  text-decoration: none;
-}
-
-a {
-  margin: 25px;
-  width: 25px 25px;
+body {
   background-color: black;
-  border-radius: 0;
-  font-size: 20px;
-}
-
-footer a {
   color: white;
 }
 
-video {
-  float: center;
-  margin-left: 330px;
-}
-
-h2 {
-  float: center;
-  color: black;
-  width: auto;
-  background-color: white;
-  border-radius: 0;
-  font-size: 20px;
-  padding-left: 550px;
-}
-
-caption {
-  margin: 10px;
-  width: 115px;
-  background-color: white;
-  border-radius: 0;
-  font-size: 25px;
-}
-
-footer {
-  float: right;
+/* HEADER */
+header h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  padding: 40px 20px;
   text-align: center;
-  /* background-color: black; */
-  width: 350px;
+  background-color: white;
+  color: black;
 }
 
-div {
-  float: left;
+/* LINKS */
+a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.link {
+  color: white;
+  display: inline-block;
+}
+
+/* TÍTULOS */
+h2, h3, h4, h5, h6 {
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-align: center;
 }
 
 h3 {
-  font-size: 45px;
-  margin: 0;
-  padding: 15px;
-  padding-bottom: 25px;
-  height: 35px;
-  text-align: center;
+  font-size: 2.5rem;
   background-color: black;
   border: double red;
 }
 
 h4 {
-  font-size: 25px;
-  background-color: red;
-  width: 160px;
-  border: solid black;
-}
-
-p.texto {
-  font-size: 18px;
-  border: solid black;
   background-color: red;
 }
 
 h5 {
-  font-size: 25px;
-  width: 165px;
   background-color: rgb(7, 7, 43);
-  border: solid red;
-}
-
-p.textoa {
-  font-size: 18px;
-  border: solid red;
-  background-color: rgb(7, 7, 43);
+  color: yellow;
 }
 
 h6 {
-  font-size: 25px;
-  width: 250px;
   background-color: rgb(49, 190, 124);
-  border: solid black;
 }
 
-p.textob {
+/* TEXTOS */
+p {
   font-size: 18px;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.texto {
+  background-color: red;
   border: solid black;
-  background-color: rgb(49, 190, 124);
 }
 
-h7 {
-  font-size: 40px;
-  margin: auto;
-  padding-left: 400px;
-  padding-right: 400px;
-  text-align: center;
-  background-color: red;
-  border: double white;
-}
-
-h8 {
-  font-size: 40px;
-  text-align: center;
-  margin: auto;
-  padding-left: 350px;
-  padding-right: 350px;
-  background-color: red;
-  border: double white;
-}
-
-h9 {
-  font-size: 45px;
-  margin-top: 25px;
-  padding-left: 450px;
-  padding-right: 450px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  background-color: black;
-  border: double red;
-}
-
-h10 {
-  font-size: 25px;
-  width: 165px;
+.textoa {
   background-color: rgb(7, 7, 43);
   border: solid red;
+  color: yellow;
 }
 
-p.textoc {
-  font-size: 18px;
-  border: solid red;
-  background-color: rgb(7, 7, 43);
-}
-
-h11 {
-  font-size: 25px;
-  background-color: red;
-  width: 160px;
-  border: solid black;
-}
-
-/* p.textod {
-            font-size: 18px;
-    border: solid black;
-    background-color: red;
-        } */
-
-h12 {
-  font-size: 25px;
-  width: 250px;
+.textob {
   background-color: rgb(49, 190, 124);
   border: solid black;
+  color: black;
 }
 
-h13 {
-  font-size: 45px;
-  padding-left: 595px;
-  padding-right: 595px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: auto;
-  text-align: center;
-  background-color: black;
-  border: double red;
-}
-
-h14 {
-  font-size: 25px;
-  width: 165px;
-  background-color: rgb(7, 7, 43);
-  border: solid red;
-}
-
-p.textoe {
-  font-size: 18px;
-  border: solid yellow;
-  background-color: rgb(8, 147, 240);
-}
-
-h15 {
-  font-size: 25px;
-  width: 165px;
-  background-color: rgb(8, 147, 240);
-  border: solid yellow;
-}
-
-h16 {
-  font-size: 25px;
-  width: 250px;
-  background-color: rgb(49, 190, 124);
-  border: solid black;
-}
-
+/* GALERÍA RESPONSIVE */
 section {
   display: flex;
-  width: 600px;
-  height: 430px;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 1200px;
 }
 
 section img {
-  width: 0px;
-  flex-grow: 1;
+  width: 250px;
+  height: 180px;
   object-fit: cover;
-  opacity: 0.8;
-  transition: 0.5s ease;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.85;
 }
 
 section img:hover {
-  cursor: crosshair;
-  width: 300px;
+  transform: scale(1.05);
   opacity: 1;
-  filter: contrast(120%);
+}
+
+/* VIDEO */
+video {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
 }
